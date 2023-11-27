@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComicAnimeEmpire</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="imagenes/loli.png">
+    <script src="script.js" defer></script>
+    <script src="reproductor.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- INICIO navegación -->
+    <div class="navbar-container">
+        <header class="header">
+            <div class="logo">
+                <!-- Enlace al inicio usando el logo -->
+                <a href="anime.html">
+                    <img src="imagenes/logopeque.png" alt="Logo de tu marca">
+                </a>
+            </div>
+
+            <nav>
+                <ul class="nav-links">
+
+                    <li><a href="main.html">Inicio</a></li>
+                    <li><a href="comics.html">Comics</a></li>
+                    <li><a href="#">Mangas</a></li>
+                    <li><a href="recientes.html">Más Recientes</a></li>
+                    <li><a href="#">Mi lista</a></li>
+                </ul>
+            </nav>
+            <a class="btn" href="#"><button>Login</button></a>
+            <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+        </header>
+
+  
+    
+
+
+    </div>
+
+    <!-- FIN navegación -->
+
+           <!-- INICIO CUADROS-->
+           <div class="rectangulo">
+            <div class="square black"></div>
+            <div class="square red"></div>
+            <div class="square celeste"></div>
+            <div class="square mostaza"></div>
+
+          </div>
+           <!-- FIN CUADROS-->
+
+            <!--INICIO IMAGENES ENCIMA-->
+<div class="otaku">
+  <div class="box">
+    <button class="overlay-button" onclick="selectImage(1)">
+      <img src="imagenes/spiderman.png" alt="Imagen 1" class="overlay-image image-1">
+    </button>
+  </div>
+  <div class="box">
+    <button class="overlay-button" onclick="selectImage(2)">
+      <img src="imagenes/comics.png" alt="Imagen 2" class="overlay-image image-2">
+    </button>
+  </div>
+  <div class="box">
+    <button class="overlay-button" onclick="selectImage(3)">
+      <img src="imagenes/mangas.png" alt="Imagen 3" class="overlay-image image-3">
+    </button>
+  </div>
+  <div class="box">
+    <button class="overlay-button" onclick="selectImage(4)">
+      <img src="imagenes/anya.png" alt="Imagen 4" class="overlay-image image-4">
+    </button>
+  </div>
+  <div class="box">
+    <button class="overlay-button" onclick="selectImage(5)">
+      <img src="imagenes/animes-de-temporada.png" alt="Imagen 5" class="overlay-image image-5">
+    </button>
+  </div>
+  <div class="box">
+    <button class="overlay-button" onclick="selectImage(6)">
+      <img src="imagenes/snk.png" alt="Imagen 6" class="overlay-image image-6">
+    </button>
+  </div>
+  <div class="box">
+    <button class="overlay-button" onclick="selectImage(7)">
+      <img src="imagenes/comics-recientes.png" alt="Imagen 7" class="overlay-image image-7">
+    </button>
+  </div>
+  <div class="box">
+    <button class="overlay-button" onclick="selectImage(8)">
+      <img src="imagenes/ironman.png" alt="Imagen 8" class="overlay-image image-8">
+    </button>
+  </div>
+</div>
+              <!-- Repite lo anterior para las imágenes restantes -->
+
+
+            <!--FIN IMAGENES ENCIMA-->
+
+
+<!-- Contenedor del reproductor de música -->
+<div class="music-container">
+    <div class="music-player">
+        <div class="cover">
+            <img src="portadasaudio/nogamenolife.png" alt="Album Cover">
+        </div>
+        <div class="info">
+            <h2 id="title">Openings</h2>
+            <p id="artist">ANIME</p>
+        </div>
+        <div class="controls">
+            <input type="range" id="volume" min="0" max="100" step="1" value="100">
+            <span id="volumeValue">100%</span>
+        </div>
+        <audio id="audio" src="audio/opnogamenolife.mp3"></audio>
+        <div class="controls">
+            <button id="prevBtn">&#8249;</button>
+            <button id="playPauseBtn">&#9658;</button>
+            <button id="nextBtn">&#8250;</button>
+        </div>
+        <div id="progress-container">
+            <div id="progress"></div>
+        </div>
+    </div>
+</div>
+
+
+   
+<!-- inicio carrusel-->
+
+    <div class="wrapper">
+        <i id="left" class="fa-solid fa-angle-left"></i>
+        <ul class="carousel"><li class="card">
+            <div class="img"><img src="imagenes/nano.png" alt="img" draggable="false"></div>
+            <h2>Kimi no Koto ga Dai Dai Dai Dai Daisuki na 100-nin no Kanojo!</h2>
+            <span>Eiai Nano y Aijou Rentarou</span>
+          </li>
+          <li class="card">
+            <div class="img"><img src="imagenes/lol.png" alt="img" draggable="false"></div>
+            <h2>League of Legends</h2>
+            <span>Yasuo</span>
+          </li>
+          <li class="card">
+            <div class="img"><img src="imagenes/huason.png" alt="img" draggable="false"></div>
+            <h2>Suicide Squad Isekai</h2>
+            <span>Joker y Harley Quinn</span>
+          </li>
+          <li class="card">
+            <div class="img"><img src="imagenes/superman.png" alt="img" draggable="false"></div>
+            <h2>My Adventures With Superman</h2>
+            <span>Superman</span>
+          </li>
+          <li class="card">
+            <div class="img"><img src="imagenes/ousamagame.png" alt="img" draggable="false"></div>
+            <h2>Ousama Game The Animation</h2>
+            <span>Nobuaki Kanazawa</span>
+          </li>
+          <li class="card">
+            <div class="img"><img src="imagenes/blackclover.png" alt="img" draggable="false"></div>
+            <h2>Black Clover</h2>
+            <span>Asta y Noelle</span>
+          </li>
+        <li class="card">
+            <div class="img"><img src="imagenes/jack.png" alt="img" draggable="false"></div>
+            <h2>Shuumatsu No Valkyrie</h2>
+            <span>Jack el destripador</span>
+          </li></ul>
+        <i id="right" class="fa-solid fa-angle-right"></i>
+      </div>
+
+    <!-- Tu fin del carrusel -->
+
+
+    <script type="text/javascript" src="nav.js"></script>
+
+</body>
+</html>
